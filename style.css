@@ -57,9 +57,9 @@ ul {
     align-items: center;
     background-image: url(assets/praline-croustillant-pexels-seurafrancis99-37439237\ \(1\).jpg);
     background-position: center;
-    background-size: 1350px;
+    background-size: cover;
     background-repeat: no-repeat;
-    min-height: 520px;
+    min-height: 500px;
 
     h1 {
         font-size: 93px;
@@ -77,57 +77,69 @@ ul {
         font-family: "Playfair Display", serif;
     }
 
-    .bouton-news {
-        padding: 10px 18px;
-        background-color: #5A1734;
-        color: #FEFBFC;
-        border-radius: 10px;
-        text-decoration: none;
-        font-family: "Quattrocento Sans", sans-serif;
-        display: inline-block;
-    }
+
 }
 
-.products h2 {
+.bouton-news {
+    padding: 10px 18px;
+    background-color: #5A1734;
+    color: #FEFBFC;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: "Quattrocento Sans", sans-serif;
+    display: inline-block;
+}
+
+h2 {
     font-size: 40px;
     color: #461229;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
 }
+
+p {
+    font-family: "Quattrocento Sans", sans-serif;
+}
+
+
+
+
 /* CARTES PRODUITS */
 .product-card {
-  width: 500px;
-  height: 400px;
-  padding: 20px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
 
 }
 
-#praline-croustillant{
-background-image: url(assets/praline-croustillant-pexels-seurafrancis99-37439237\ \(1\).jpg);
+#praline-croustillant {
+    background-image: url(assets/praline-croustillant-pexels-seurafrancis99-37439237\ \(1\).jpg);
 }
 
 #truffe-champagne {
-background-image: url(assets/truffe-champagne-pexels-planka-31325599\ \(1\).jpg);
+    background-image: url(assets/truffe-champagne-pexels-planka-31325599\ \(1\).jpg);
 }
 
 #tablette-chocolat {
-background-image: url(assets/tablette-chocolat-noir-pexels-alleksana-4113333\ \(1\).jpg);
+    background-image: url(assets/tablette-chocolat-noir-pexels-alleksana-4113333\ \(1\).jpg);
 }
 
 #coffret-chocolat {
-background-image: url(assets/coffret-chocolats-assortis-pexels-anthony-rahayel-125801377-38444667\ \(1\).jpg);
+    background-image: url(assets/coffret-chocolats-assortis-pexels-anthony-rahayel-125801377-38444667\ \(1\).jpg);
 }
 
 #chocolat-chaud {
-background-image: url(assets/chocolat-chaud-pexels-leeloothefirst-5264675\ \(1\).jpg);
+    background-image: url(assets/chocolat-chaud-pexels-leeloothefirst-5264675\ \(1\).jpg);
 }
 
 #mendiants {
-background-image: url(assets/mendiants-pexels-pinklime-foody-169881302-11074275\ \(1\).jpg);
+    background-image: url(assets/mendiants-pexels-pinklime-foody-169881302-11074275\ \(1\).jpg);
 }
 
 .contenu {
@@ -136,7 +148,8 @@ background-image: url(assets/mendiants-pexels-pinklime-foody-169881302-11074275\
     right: 10px;
     text-align: left;
     color: white;
-    h3{
+
+    h3 {
         font-size: 30px;
         margin: 0;
         padding: 10px 15px;
@@ -148,17 +161,45 @@ background-image: url(assets/mendiants-pexels-pinklime-foody-169881302-11074275\
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+
     p {
         margin: 0;
         padding: 10px 15px;
     }
+
     a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 17px;
-    margin: 0;
-    background-color: white;
-    border-radius: 18px;
-    font-weight: bold;
-  }
+        text-decoration: none;
+        color: black;
+        padding: 8px 17px;
+        margin: 0;
+        background-color: white;
+        border-radius: 18px;
+        font-weight: bold;
+    }
+}
+
+/* IMAGE SERVICE */
+.img-service {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 400px;
+    max-width: 540px;
+    border-radius: 12px;
+}
+
+.right-service {
+    display: flex;
+    align-items: flex-start;
+
+    h3 {
+        font-size: 25px;
+        color: #461229;
+        text-transform: uppercase;
+        font-family: "Playfair Display", serif;
+    }
+
+    .service-text {
+        padding: 15px 15px;
+    }
 }
