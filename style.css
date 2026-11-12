@@ -95,6 +95,7 @@ h2 {
     color: #461229;
     text-transform: uppercase;
     font-family: "Playfair Display", serif;
+    margin-top: 50px;
 }
 
 p {
@@ -246,19 +247,32 @@ p {
     }
 }
 
-.choice {
-    /* display: flex;
-    justify-content: flex-start; */
-    .round-img {
+.why-us {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+
+    .choice {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        max-height: 250px;
-    }
-    .text-choice {
-        max-width: 30%;
+        align-items: center;
+        margin: 0;
+
+        .round-img {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            max-height: 250px;
+        }
+
+        .text-choice {
+            max-width: 250px;
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 25px;
+        }
     }
 }
