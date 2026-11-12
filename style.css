@@ -16,6 +16,9 @@ body {
     margin: 0;
 }
 
+span {
+    font-weight: bold;
+}
 /*  DEBUT HEADER, NAV BAR */
 header {
     display: flex;
