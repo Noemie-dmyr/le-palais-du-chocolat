@@ -258,7 +258,7 @@ p {
         background-repeat: no-repeat;
         max-height: 250px;
     }
-    p {
-        max-width: 30px;
+    .text-choice {
+        max-width: 30%;
     }
 }
