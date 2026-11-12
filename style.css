@@ -191,15 +191,74 @@ p {
 .right-service {
     display: flex;
     align-items: flex-start;
-
-    h3 {
-        font-size: 25px;
-        color: #461229;
-        text-transform: uppercase;
-        font-family: "Playfair Display", serif;
-    }
+    margin-top: 30px;
 
     .service-text {
-        padding: 15px 15px;
+        padding: 0px 25px;
+        margin-left: 25px;
+        margin-top: 0;
+
+        h3 {
+            font-size: 25px;
+            color: #461229;
+            text-transform: uppercase;
+            font-family: "Playfair Display", serif;
+            margin: 0;
+        }
+
+        p {
+            padding-top: 20px;
+            font-size: 18px;
+        }
+
+        .bouton-news {
+            margin-top: 15px;
+        }
+    }
+}
+
+.left-service {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+
+    .service-text {
+        padding: 0px 25px;
+        margin-right: 25px;
+        margin-top: 0;
+
+        h3 {
+            font-size: 25px;
+            color: #461229;
+            text-transform: uppercase;
+            font-family: "Playfair Display", serif;
+            margin: 0;
+        }
+
+        p {
+            padding-top: 20px;
+            font-size: 18px;
+        }
+
+        .bouton-news {
+            margin-top: 15px;
+        }
+    }
+}
+
+.choice {
+    /* display: flex;
+    justify-content: flex-start; */
+    .round-img {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-height: 250px;
+    }
+    p {
+        max-width: 30px;
     }
 }
