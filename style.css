@@ -156,6 +156,10 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-image: linear-gradient(to top,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.35) 25%,
+            transparent 65%);
     position: relative;
     border-radius: 12px;
     overflow: hidden;
@@ -164,27 +168,39 @@ p {
 
 /* IMAGES PRODUITS */
 #praline-croustillant {
-    background-image: url(assets/praline-croustillant-pexels-seurafrancis99-37439237\ \(1\).jpg);
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent 65%),
+        url(assets/praline-croustillant-pexels-seurafrancis99-37439237\ \(1\).jpg);
 }
 
 #truffe-champagne {
-    background-image: url(assets/truffe-champagne-pexels-planka-31325599\ \(1\).jpg);
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent 65%),
+        url(assets/truffe-champagne-pexels-planka-31325599\ \(1\).jpg);
 }
 
 #tablette-chocolat {
-    background-image: url(assets/tablette-chocolat-noir-pexels-alleksana-4113333\ \(1\).jpg);
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent 65%),
+        url(assets/tablette-chocolat-noir-pexels-alleksana-4113333\ \(1\).jpg);
 }
 
 #coffret-chocolat {
-    background-image: url(assets/coffret-chocolats-assortis-pexels-anthony-rahayel-125801377-38444667\ \(1\).jpg);
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent 65%),
+        url(assets/coffret-chocolats-assortis-pexels-anthony-rahayel-125801377-38444667\ \(1\).jpg);
 }
 
 #chocolat-chaud {
-    background-image: url(assets/chocolat-chaud-pexels-leeloothefirst-5264675\ \(1\).jpg);
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent 65%),
+        url(assets/chocolat-chaud-pexels-leeloothefirst-5264675\ \(1\).jpg);
 }
 
 #mendiants {
-    background-image: url(assets/mendiants-pexels-pinklime-foody-169881302-11074275\ \(1\).jpg);
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent 65%),
+        url(assets/mendiants-pexels-pinklime-foody-169881302-11074275\ \(1\).jpg);
 }
 
 .contenu {
@@ -192,16 +208,51 @@ p {
     bottom: 20px;
     right: 10px;
     text-align: left;
-    color: white;
+    color: #F7E0EA;
 
-    h3 {
-        font-size: 30px;
-        margin: 0;
-        padding: 10px 15px;
+    .link-product-page {
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+
+        h3 {
+            font-size: 30px;
+            margin: 0;
+            padding: 10px 15px;
+            color: #F7E0EA;
+        }
+    }
+
+    .link-product-page::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        height: 2px;
+        background-color: #F7E0EA;
+        width: 0%;
+        transition: width 0.3s ease;
+    }
+
+    .link-product-page:hover::after {
+        width: 100%;
+        animation: heartbeat116 1.5s ease-in-out 0.3s infinite;
+    }
+
+    @keyframes {
+
+        0%,
+        100% {
+            width: 100%;
+        }
+
+        50% {
+            width: 60%;
+        }
     }
 }
 
-.description-bouton {
+.description-produit {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,6 +269,10 @@ p {
         margin: 0;
         font-size: 25px;
 
+    }
+
+    a:hover {
+        color: #D76497;
     }
 }
 
@@ -389,6 +444,8 @@ footer {
     }
 
     .shop {
+        text-align: left;
+
         p {
             font-size: 13px;
             text-align: left;
@@ -397,17 +454,19 @@ footer {
         h4 {
             text-align: left;
         }
+
+        .phone {
+            text-decoration: none;
+            color: #F7E0EA;
+        }
     }
 
     .reseaux {
-        display: flex;
-        align-items: center;
-
         .social-media {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             padding: 15px;
-            gap: 20px;
+            gap: 30px;
 
             .instagram,
             .twitter,
@@ -415,7 +474,6 @@ footer {
             .mail {
                 display: flex;
                 align-items: center;
-                gap: 15px;
             }
 
             img {
