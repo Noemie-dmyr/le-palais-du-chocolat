@@ -46,7 +46,7 @@ ul {
 
     a {
         text-decoration: none;
-        color: #FEFBFC;
+        color: #F7E0EA;
         text-transform: uppercase;
         font-family: "Playfair Display", serif;
     }
@@ -282,16 +282,15 @@ p {
     display: flex;
     justify-content: space-around;
     gap: 30px;
-    margin: 0;
+    margin-bottom: 80px;
 
 
     .avis {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
         margin: 0;
-        padding: 10px 45px;
+        padding: 10px 40px 35px 40px;
         border-radius: 16px;
         background-color: #F7E0EA;
 
@@ -301,15 +300,54 @@ p {
             text-transform: uppercase;
             font-family: "Playfair Display", serif;
             margin-bottom: 0;
+             text-align: center;
         }
 
         h4 {
-           font-family: "Playfair Display", serif;
-
+            font-family: "Playfair Display", serif;
+            margin-bottom: 0;
+            text-align: left;
         }
 
         p {
             max-width: 300px;
+             text-align: left;
+        }
+        .stars {
+            text-align: center;
+        }
+    }
+}
+
+footer {
+    background-color: #461229;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    color: #F7E0EA;
+
+    .logo-footer {
+        width: 100px;
+    }
+
+    .shop {
+        p {
+            font-size: 13px;
+            text-align: left;
+        }
+
+        h4 {
+            text-align: left;
+        }
+    }
+    .reseaux {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        img {
+            width: 40px;
         }
     }
 }
