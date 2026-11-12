@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0;
 }
 
 header {
@@ -273,6 +274,42 @@ p {
             justify-content: center;
             align-items: flex-start;
             margin-top: 25px;
+        }
+    }
+}
+
+.temoignages {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 0;
+
+
+    .avis {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 10px 45px;
+        border-radius: 16px;
+        background-color: #F7E0EA;
+
+        h3 {
+            font-size: 20px;
+            color: #461229;
+            text-transform: uppercase;
+            font-family: "Playfair Display", serif;
+            margin-bottom: 0;
+        }
+
+        h4 {
+           font-family: "Playfair Display", serif;
+
+        }
+
+        p {
+            max-width: 300px;
         }
     }
 }
